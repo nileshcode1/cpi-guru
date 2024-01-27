@@ -14,6 +14,7 @@ Visit the [RGIPT CPI-GURU](https://cpi-guru.vercel.app/)
 
 ## ScreenShots
 ![image](https://github.com/nileshcode1/cpi-guru/assets/77544758/dbf72a2f-dde5-4190-b52e-911e498601e8)
-![image](https://github.com/nileshcode1/cpi-guru/assets/77544758/92f85685-3d7a-4ca5-ad8d-9f2f93e8aa2f)
+<img src="https://github.com/nileshcode1/cpi-guru/assets/77544758/92f85685-3d7a-4ca5-ad8d-9f2f93e8aa2f" alt="Image" height="200">
+
 
 
