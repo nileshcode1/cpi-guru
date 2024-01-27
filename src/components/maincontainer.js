@@ -1,5 +1,3 @@
-
-
 import { Button } from "@material-tailwind/react";
 import React, { useState, useEffect } from "react";
 
@@ -38,7 +36,7 @@ const MainContainer = () => {
           <h1 className=" flex justify-center items-center text-3xl md:text-xl text-black font-bold mb-2">
             RGIPT CPI GURU 🙏
           </h1>
-          <nav className="flex flex-wrap justify-between mb-6 text-xl">
+          {/* <nav className="flex flex-wrap justify-between mb-6 text-xl">
             <label className="text-gray-800 hover:text-blue-500 font-semibold m-2 p-2 ">
               Branch 📚
             </label>
@@ -80,6 +78,54 @@ const MainContainer = () => {
                 {selectedTab === "CPI" ? "Semester 4 🎉" : "Semester 🎉"}
               </label>
             )}
+            {selectedTab === "SPI" && (
+              <DropdownSemeter onChange={handleSemesterChange} />
+            )}
+          </nav> */}
+          <nav className="flex flex-wrap justify-between mb-6 text-base sm:text-xl">
+            <label className="text-gray-800 hover:text-blue-500 font-semibold m-1 p-1 sm:m-2 sm:p-2">
+              Branch 📚
+            </label>
+            <Button
+              variant={selectedButton === "CSE" ? "solid" : "outline"}
+              className={`text-gray-800 ${
+                selectedButton === "CSE" ? "bg-blue-500" : "hover:text-blue-500"
+              } font-semibold m-1 p-1 sm:m-2 sm:p-2`}
+              onClick={() => handleButtonClick("CSE")}
+            >
+              CSE 💻
+            </Button>
+            <Button
+              variant={selectedButton === "ECE" ? "solid" : "outline"}
+              className={`text-gray-800 ${
+                selectedButton === "ECE" ? "bg-blue-500" : "hover:text-blue-500"
+              } font-semibold m-1 p-1 sm:m-2 sm:p-2`}
+              onClick={() => handleButtonClick("ECE")}
+            >
+              ECE 💡
+            </Button>
+            <Button
+              variant={selectedButton === "Other" ? "solid" : "outline"}
+              className={`text-gray-800 ${
+                selectedButton === "Other"
+                  ? "bg-blue-500"
+                  : "hover:text-blue-500"
+              } font-semibold m-1 p-1 sm:m-2 sm:p-2`}
+              onClick={() => handleButtonClick("Other")}
+            >
+              Other 🤖
+            </Button>
+
+            <div className="w-4 sm:w-8"></div>
+
+            {selectedTab === "SPI" ? (
+              <label className="m-1 p-1 sm:m-2 sm:p-2">Semester 🎉</label>
+            ) : (
+              <label className="m-1 p-1 sm:m-2 sm:p-2">
+                {selectedTab === "CPI" ? "Semester 4 🎉" : "Semester 🎉"}
+              </label>
+            )}
+
             {selectedTab === "SPI" && (
               <DropdownSemeter onChange={handleSemesterChange} />
             )}

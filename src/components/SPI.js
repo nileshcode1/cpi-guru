@@ -86,7 +86,6 @@ const SPIInputTable = ({ branch, semester }) => {
     return isNaN(averageScore) ? 0 : averageScore.toFixed(1);
   };
 
-
   useEffect(() => {
     // Clear the input fields when the semester changes
     setGradeInputs(Array(Semester.length).fill(""));
@@ -154,13 +153,13 @@ const SPIInputTable = ({ branch, semester }) => {
       </div>
       <div className="flex justify-between">
         <h3
-          className="text-black text-3xl"
+          className="text-black text-xl md:text-xl "
           style={{ fontFamily: "Chelsea Market", fontSize: "24px" }}
         >
           Credit score: {calculateCreditScore()}/10
         </h3>
         <h3
-          className="mr-20 text-orange-600 "
+          className="mr-20 text-orange-600 hidden md:block"
           style={{ fontFamily: "Chelsea Market", fontSize: "24px" }}
         >
           {captions()}
