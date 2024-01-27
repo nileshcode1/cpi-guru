@@ -35,7 +35,10 @@ const MainContainer = () => {
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-fixed bg-cover  md:text-wrap ">
       <div className="bg-white p-8 rounded-lg shadow-md">
         <div className="text-3xl md:text-xl">
-          <nav className="flex flex-wrap justify-between mb-6 ">
+          <h1 className=" flex justify-center items-center text-3xl md:text-xl text-black font-bold mb-2">
+            RGIPT CPI GURU 🙏
+          </h1>
+          <nav className="flex flex-wrap justify-between mb-6 text-xl">
             <label className="text-gray-800 hover:text-blue-500 font-semibold m-2 p-2 ">
               Branch 📚
             </label>
